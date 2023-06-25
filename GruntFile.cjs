@@ -1,7 +1,3 @@
-/* the file ending .cjs stands for "common js", which refers to the old node.js syntax.
-This file ending is needed because the type is currently "module" in the package.json file - 
-which is not compatible to the old syntax. see documentation here: https://nodejs.org/docs/latest-v16.x/api/esm.html#esm_enabling */
-
 module.exports = function (grunt) {
   // Time how long tasks take. Can help when optimizing build times
   require('time-grunt')(grunt);
@@ -73,8 +69,4 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
 
   grunt.registerTask('default', ['imagemin', 'copy', 'sass', 'uglify']);
-
-  /*******************************************************************/
-  /**Parallel tasks -> https://www.npmjs.com/package/grunt-concurrent **/
-  /*******************************************************************/
 };
