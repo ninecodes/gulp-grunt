@@ -1,0 +1,1 @@
+window.addEventListener("load",()=>{document.querySelector(".js-test").innerHTML="JS initialized!"});
