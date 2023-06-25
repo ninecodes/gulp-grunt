@@ -16,7 +16,7 @@ module.exports = function (grunt) {
             expand: true,
             cwd: 'src/images',
             src: ['*.jpg'],
-            dest: 'dist/grunt/images/',
+            dest: 'dist/images/',
           },
         ],
       },
@@ -32,7 +32,7 @@ module.exports = function (grunt) {
             expand: true,
             cwd: 'src',
             src: '*.html',
-            dest: 'dist/grunt',
+            dest: 'dist',
           },
         ],
       },
@@ -46,7 +46,7 @@ module.exports = function (grunt) {
           style: 'compressed',
         },
         files: {
-          'dist/grunt/styles.css': 'src/scss/styles.scss', // 'destination': 'source'
+          'dist/styles.css': 'src/scss/styles.scss', // 'destination': 'source'
         },
       },
     },
@@ -56,7 +56,7 @@ module.exports = function (grunt) {
     uglify: {
       dist: {
         files: {
-          'dist/grunt/main.js': ['src/js/main.js'], // 'destination': 'source'
+          'dist/main.js': ['src/js/main.js'], // 'destination': 'source'
         },
       },
     },
